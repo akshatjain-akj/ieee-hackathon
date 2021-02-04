@@ -13,9 +13,15 @@ import img8 from "./images/8.jpg";
 const Camps = () => {
     return (
       <div className="content">
-        <Slide easing="ease">
+        <Slide easing="ease" autoplay={false}>
           <div className="each-slide">
             <img className="image"src={img1} alt="error"/>
+            <div>
+            <h1>hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</h1>
+            <br/>
+            <h1>hellllllllloooooooooooooooooooooo</h1>
+            </div>
+            
           </div>
           <div className="each-slide">
           <img className="image"src={img2}alt="error"/>

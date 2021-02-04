@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import events from './pages/events';
 import join from './pages/join';
 import Camps from './pages/Camps';
+import Telegram from './pages/Telegram';
 import About from './pages/aboutus';
 import Downloads from './pages/Downloads';
 import Home from "./components/Home";
@@ -25,6 +26,7 @@ function App() {
           <Route path='/Camps' component={Camps} />
           <Route path='/join' component={join} />
           <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/telegram" component={Telegram} />
           <Route exact path="/login" component={LogIn} />
           <Route exact path="/signup" component={SignUp} />
           <Route path='/about'>
