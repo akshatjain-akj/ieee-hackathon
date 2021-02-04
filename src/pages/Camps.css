@@ -8,6 +8,15 @@
 {
   background-color: rgb(255, 242, 225);
 }
+.each-slide
+{
+  display:grid;
+  grid-template-columns: 700px 500px;
+}
+.image
+{
+  height:700px;
+}
 .heading
 {
     text-align: center;

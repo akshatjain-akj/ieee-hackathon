@@ -11,6 +11,7 @@ const LogIn = () => {
       firebaseConfig.auth().signInWithEmailAndPassword(email.value, password.value);
     } catch (error) {
       alert(error);
+      
     }
   };
   const { currentUser } = useContext(AuthContext);
