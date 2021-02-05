@@ -1,0 +1,9 @@
+img {
+  height: 450px;
+}
+
+.multipleImg {
+  width: 600px;
+
+  /* //flex-direction: column; */
+}
