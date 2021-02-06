@@ -9,6 +9,7 @@ import Camps from './pages/Camps';
 import Telegram from './pages/Telegram';
 import Ludo from './pages/ludo';
 import Whatsapp from './pages/whatsapp';
+import Hotstar from './pages/hotstar';
 import About from './pages/aboutus';
 import Downloads from './pages/Downloads';
 import Home from './components/Home';
@@ -34,6 +35,7 @@ function App() {
             <Route exact path='/dashboard' component={Dashboard} />
             <Route exact path='/telegram' component={Telegram} />
             <Route exact path='/ludo' component={Ludo} />
+            <Route exact path='/hotstar' component={Hotstar} />
             <Route exact path='/whatsapp' component={Whatsapp} />
             <Route exact path='/gmail' component={Gmail} />
             <Route exact path='/classroom' component={ClassRoom} />
