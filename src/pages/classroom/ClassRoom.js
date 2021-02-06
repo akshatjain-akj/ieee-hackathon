@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import img1 from '../../images/Class/c1.png';
-import img2 from '../../images/Class/c2.png';
 import img3 from '../../images/Class/c3.png';
 import img4 from '../../images/Class/c4.png';
 import img5 from '../../images/Class/c5.png';

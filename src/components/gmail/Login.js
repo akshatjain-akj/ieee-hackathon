@@ -10,12 +10,11 @@ export class Login extends Component {
       <React.Fragment>
         <h3> At Login </h3>
 
-        <div className='d-flex '>
-          <div>
-            <img src={img2} alt='' />
-            <img src={img3} alt='' />
+        <div className='d-flex flex-wrap'>
+          <div className='col-sm-6'>
+            <img src={img3} alt='' className='' />
           </div>
-          <div className='login d-inline display-5 px-3'>
+          <div className='login d-inline display-5 px-3 col-sm-6'>
             STEP 2: This type of form will be in your screen.Fill the form with
             respective details . A sample is shown on the picture below. It is
             expected to create a strong password of length greater than or equal
@@ -23,13 +22,14 @@ export class Login extends Component {
             <div className='py-5'>If done click on next</div>
           </div>
         </div>
-
-        <Link to='/gmail/verify' className='btn btn-primary btn-lg'>
-          Next
-        </Link>
-        <Link to='/' className='btn mx-4 btn-primary btn-lg'>
-          GO BACK
-        </Link>
+        <div className='d-flex justify-content-center mt-3 '>
+          <Link to='/' className='btn btn-primary btn-lg'>
+            GO BACK
+          </Link>
+          <Link to='/gmail/verify' className='btn btn-primary btn-lg mx-4 '>
+            Next
+          </Link>
+        </div>
       </React.Fragment>
     );
   }
