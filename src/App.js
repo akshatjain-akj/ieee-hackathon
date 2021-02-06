@@ -18,6 +18,7 @@ import SignUp from './components/Signup';
 import { AuthProvider } from './components/Auth';
 import Gmail from './components/gmail/gmail';
 import ClassRoom from './pages/classroom/ClassRoom';
+import Meet from './pages/meet/meet';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route exact path='/gmail' component={Gmail} />
             <Route exact path='/classroom' component={ClassRoom} />
             <Route exact path='/login' component={LogIn} />
+            <Route exact path='/meet' component={Meet} />
             <Route exact path='/signup' component={SignUp} />
             <Route path='/about'>
               <About />
