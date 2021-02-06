@@ -23,14 +23,14 @@ export class privacyAndFinish extends Component {
             <img src={img13} alt='' className='multipleImg sm-3   ' />
           </div>
         </div>
-
-        <Link to='/' className='btn btn-primary btn-lg'>
-          Go to Home
-        </Link>
-
-        <Link to='/gmail/details' className=' mx-4 btn btn-primary btn-lg'>
-          GO BACK
-        </Link>
+        <div className='d-flex justify-content-center mt-3'>
+          <Link to='/gmail/details' className='  btn btn-primary btn-lg'>
+            GO BACK
+          </Link>
+          <Link to='/' className='btn btn-primary mx-4 btn-lg'>
+            Go to Home
+          </Link>
+        </div>
       </React.Fragment>
     );
   }
