@@ -6,6 +6,7 @@ import img4 from '../../images/Class/c4.png';
 import img5 from '../../images/Class/c5.png';
 import img6 from '../../images/Class/c6.png';
 import img7 from '../../images/Class/c7.png';
+import congo from '../../images/Class/congo.jpg';
 import './style.css';
 
 function Classroom1() {
@@ -13,10 +14,10 @@ function Classroom1() {
     <div>
       <h3>Classroom 1</h3>
       <div className='d-flex  container flex-wrap '>
-        <div className='col-sm-6 '>
+        <div className='col-md-6   '>
           <img src={img1} className='img' alt='' />
         </div>
-        <div className='col-sm-6 fs-2'>
+        <div className='col-md-6   fs-2'>
           STEP 1: Select the appropriate google account
         </div>
       </div>
@@ -37,10 +38,10 @@ function Classroom2() {
     <div>
       <h3>Classroom 2</h3>
       <div className='d-flex  container flex-wrap '>
-        <div className='col-sm-6 '>
+        <div className='col-md-6   '>
           <img src={img3} className='img' alt='' />
         </div>
-        <div className='col-sm-6 fs-2'>
+        <div className='col-md-6   fs-2'>
           STEP 2: Select the option to create/ join a new class as shown in
           image
         </div>
@@ -62,10 +63,10 @@ function Classroom3() {
     <div>
       <h3>Classroom 3</h3>
       <div className='d-flex  container flex-wrap '>
-        <div className='col-sm-6 '>
+        <div className='col-md-6   '>
           <img src={img4} className='img' alt='' />
         </div>
-        <div className='col-sm-6 fs-2 '>
+        <div className='col-md-6   fs-2 '>
           STEP 3: Click on continue and proceed further
         </div>
       </div>
@@ -86,10 +87,10 @@ function Classroom4() {
     <div>
       <h3>Classroom 4</h3>
       <div className='d-flex  container flex-wrap '>
-        <div className='col-sm-6 '>
+        <div className='col-md-6   '>
           <img src={img5} className='img' alt='' />
         </div>
-        <div className='col-sm-6 fs-2 '>
+        <div className='col-md-6   fs-2 '>
           <div>
             STEP 4: A details page will display on your screen , fill in te
             required details as per your need and click on Create.
@@ -113,10 +114,10 @@ function Classroom5() {
     <div>
       <h3>Classroom 5</h3>
       <div className='d-flex  container flex-wrap '>
-        <div className='col-sm-6 '>
+        <div className='col-md-6   '>
           <img src={img6} className='img' alt='' />
         </div>
-        <div className='col-sm-6 fs-2'>
+        <div className='col-md-6   fs-2'>
           <div>
             STEP 5: The classroom has been created and now you are ready to post
             assignments / tutorials on this classroom . <br /> NOTE: You are
@@ -142,10 +143,10 @@ function Classroom6() {
     <div>
       <h3>Classroom 6</h3>
       <div className='d-flex  container flex-wrap '>
-        <div className='col-sm-6 '>
+        <div className='col-md-6   '>
           <img src={img7} className='img' alt='' />
         </div>
-        <div className='col-sm-6 fs-2'>
+        <div className='col-md-6   fs-2'>
           <div>
             STEP 6: In order to add assignments / tutorials you can move to the
             <strong> Classwork</strong> section of the classroom .
@@ -155,6 +156,23 @@ function Classroom6() {
       <div className='d-flex justify-content-center mt-3'>
         <Link to='/classroom5' className='btn btn-primary btn-lg'>
           Lets go to classroom 5
+        </Link>
+        <Link to='/classroom7' className='btn btn-primary btn-lg mx-3'>
+          Lets go to classroom 7
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function Classroom7() {
+  return (
+    <div>
+      <h3 className='display-4'> Congratulations you did it ! </h3>
+      <img src={congo} alt='' />
+      <div className='d-flex justify-content-center mt-3'>
+        <Link to='/classroom6' className='btn btn-primary btn-lg'>
+          Lets go to classroom 6
         </Link>
         <Link to='/classroom' className='btn btn-primary btn-lg mx-3'>
           Lets go to classroom 1
@@ -174,6 +192,7 @@ function ClassRoom() {
         <Route path='/classroom4' exact component={Classroom4} />
         <Route path='/classroom5' exact component={Classroom5} />
         <Route path='/classroom6' exact component={Classroom6} />
+        <Route path='/classroom7' exact component={Classroom7} />
         {/* <Route path='/classroom3' exact component={Classroom7} /> */}
       </BrowserRouter>
     </React.Fragment>
