@@ -7,6 +7,8 @@ import events from './pages/events';
 import join from './pages/join';
 import Camps from './pages/Camps';
 import Telegram from './pages/Telegram';
+import Ludo from './pages/ludo';
+import Whatsapp from './pages/whatsapp';
 import About from './pages/aboutus';
 import Downloads from './pages/Downloads';
 import Home from './components/Home';
@@ -30,6 +32,8 @@ function App() {
             <Route path='/join' component={join} />
             <Route exact path='/dashboard' component={Dashboard} />
             <Route exact path='/telegram' component={Telegram} />
+            <Route exact path='/ludo' component={Ludo} />
+            <Route exact path='/whatsapp' component={Whatsapp} />
             <Route exact path='/gmail' component={Gmail} />
             <Route exact path='/classroom' component={ClassRoom} />
             <Route exact path='/login' component={LogIn} />
