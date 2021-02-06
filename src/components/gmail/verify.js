@@ -24,12 +24,15 @@ export class verify extends Component {
             <img src={img7} alt='' className='multipleImg sm-3 ' />
           </div>
         </div>
-        <Link to='/gmail/details' className='btn btn-primary btn-lg'>
-          Next
-        </Link>
-        <Link to='/gmail/login' className='btn mx-4 btn-primary btn-lg'>
-          GO BACK
-        </Link>
+
+        <div className='d-flex justify-content-center mt-3'>
+          <Link to='/gmail/login' className='btn btn-primary btn-lg'>
+            GO BACK
+          </Link>
+          <Link to='/gmail/details' className='btn btn-primary btn-lg mx-4 '>
+            Next
+          </Link>
+        </div>
       </React.Fragment>
     );
   }
