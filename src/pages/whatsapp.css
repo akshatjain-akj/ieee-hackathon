@@ -1,0 +1,29 @@
+.content
+{
+  background-color: rgb(255, 242, 225);
+}
+.each-slide
+{
+  display:grid;
+  grid-template-columns: 60% 40%;
+  height: 500px;
+}
+.step
+{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.bullet
+{
+  font-size:30px;
+}
+.image
+{
+  height:500px;
+}
+.congo
+{text-align: center;
+  margin-top: 40%;
+  font-size: 60px;
+}
